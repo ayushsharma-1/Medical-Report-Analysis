@@ -1,0 +1,7 @@
+Pillow
+numpy
+tensorflow
+flask
+flask-wtf
+gunicorn
+vercel
