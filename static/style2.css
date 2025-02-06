@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc; /* Light background for a clean, fresh look */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1E88E5; /* Blue theme for trust and medical professionalism */
+    color: white;
+    padding: 60px 20px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Upload Form Section */
+.upload-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upload-form h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.upload-form .form-group {
+    margin-bottom: 20px;
+}
+
+.upload-form label {
+    font-size: 18px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.upload-form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.upload-form input[type="file"]:hover {
+    border-color: #1E88E5; /* Change border color on hover */
+}
+
+.upload-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.upload-form input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Subtle hover effect */
+}
+
+.upload-form input[type="submit"]:focus {
+    outline: none;
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* Add a responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .upload-form {
+        padding: 30px;
+    }
+
+    .upload-form h3 {
+        font-size: 24px;
+    }
+}

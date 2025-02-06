@@ -1,11 +1,31 @@
 {% extends "layout.html" %}
 {%block content %}
-<link rel="stylesheet" href="../static/style.css">
-<h1>Upload Image for Prediction</h1>
-    <form method="POST" enctype="multipart/form-data">
-        {{ form.hidden_tag() }}
-        {{ form.image.label }}<br>
-        {{ form.image() }}<br>
-        {{ form.submit() }}
+<link rel="stylesheet" href="../static/style2.css">
+
+<div class="container">
+    <header class="hero">
+        <h1>Upload Image for Prediction</h1>
+        <p>Upload an X-ray image to predict medical conditions.</p>
+    </header>
+
+    <section class="upload-form">
+        <h3>Choose an Image to Upload</h3>
+        <form method="POST" enctype="multipart/form-data" class="form">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                <label for="image">{{ form.image.label }}</label><br>
+                {{ form.image() }}
+            </div>
+            <div class="form-group">
+                {{ form.submit() }}
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>Created with 💙 by Your Medical AI Team</p>
+    </footer>
+</div>
+
 
 {%endblock content %}
